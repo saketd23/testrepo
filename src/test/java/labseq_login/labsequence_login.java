@@ -35,7 +35,7 @@ public class labsequence_login {
 	public void setup() {
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions chromeOptions = new ChromeOptions();
-		chromeOptions.setBinary("chrome.exe");
+		chromeOptions.setBinary("C:\\Users\\SD086444\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
 		driver = new ChromeDriver(chromeOptions);
 	}
 
