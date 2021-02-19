@@ -33,10 +33,10 @@ public class labsequence_login {
 	@SuppressWarnings("deprecation")
 	@BeforeClass
 	public void setup() {
-		WebDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().driverVersion("88.0.4324.27").setup();
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.setBinary("C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");
-		driver = new ChromeDriver(chromeOptions); 
+		driver = new ChromeDriver(chromeOptions);
 	}
 
 	/**
