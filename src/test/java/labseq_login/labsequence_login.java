@@ -30,7 +30,6 @@ public class labsequence_login {
 	 * To setup ChromeDriver as the standalone server that implements WebDriver
 	 * standards. ChromeDriver will allow automated testing of the web application.
 	 */
-	@SuppressWarnings("deprecation")
 	@BeforeClass
 	public void setup() {
 		WebDriverManager.chromedriver().driverVersion("88.0.4324.27").setup();
