@@ -20,7 +20,6 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import org.openqa.selenium.remote.DesiredCapabilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -34,7 +33,9 @@ public class labsequence_login {
 	@BeforeClass
 	public void setup() {
 		WebDriverManager.chromedriver().driverVersion("88.0.4324.27").setup();
-                driver = new ChromeDriver();
+		ChromeOptions chromeOptions = new ChromeOptions();
+		chromeOptions.setBinary("C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");
+		driver = new ChromeDriver(chromeOptions);
 	}
 
 	/**
