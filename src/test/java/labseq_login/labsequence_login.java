@@ -34,9 +34,7 @@ public class labsequence_login {
 	@BeforeClass
 	public void setup() {
 		WebDriverManager.chromedriver().driverVersion("88.0.4324.27").setup();
-                DesiredCapabilities capability = new DesiredCapabilities();
-                capability.setCapability("binary", "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");
-                driver = new ChromeDriver(capability);
+                driver = new ChromeDriver();
 	}
 
 	/**
