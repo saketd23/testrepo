@@ -32,10 +32,8 @@ public class labsequence_login {
 	 */
 	@BeforeClass
 	public void setup() {
-		WebDriverManager.chromedriver().driverVersion("88.0.4324.27").setup();
-		ChromeOptions chromeOptions = new ChromeOptions();
-		chromeOptions.setBinary("C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");
-		driver = new ChromeDriver(chromeOptions);
+		WebDriverManager.edgedriver().setup();
+		driver = new EdgeDriver();
 	}
 
 	/**
@@ -64,6 +62,7 @@ public class labsequence_login {
 			System.out.println(ex.getMessage());
 		}
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
 
 		try {
 			// Enter Credentials
