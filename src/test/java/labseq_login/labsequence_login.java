@@ -32,7 +32,7 @@ public class labsequence_login {
 	 */
 	@BeforeClass
 	public void setup() {
-		WebDriverManager.chromedriver().setup();
+		System.setProperty("webdriver.chrome.driver","chromedriver.exe");
 		driver = new ChromeDriver();
 	}
 
