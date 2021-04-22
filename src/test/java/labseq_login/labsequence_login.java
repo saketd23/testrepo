@@ -32,8 +32,8 @@ public class labsequence_login {
 	 */
 	@BeforeClass
 	public void setup() {
-		WebDriverManager.edgedriver().setup();
-		driver = new EdgeDriver();
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
 	}
 
 	/**
