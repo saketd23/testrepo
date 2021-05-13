@@ -34,7 +34,7 @@ public class labsequence_login {
 	}
 
 	/**
-	 * Opens Mock Idp. Enters credentials, and login button gets clicked. From the
+	 * I removed the comment.Opens Mock Idp. Enters credentials, and login button gets clicked. From the
 	 * dropdown, selects the section and navigation to the section takes place.
 	 * Scrolls to the bottom of the page and logs out.
 	 * 
