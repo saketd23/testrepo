@@ -26,10 +26,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class labsequence_login {
 	public static WebDriver driver;
 
-	/**
-	 * To setup ChromeDriver as the standalone server that implements WebDriver
-	 * standards. ChromeDriver will allow automated testing of the web application.
-	 */
+
 	@BeforeClass
 	public void setup() {
 		System.setProperty("webdriver.chrome.driver","chromedriver.exe");
